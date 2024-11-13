@@ -11,6 +11,7 @@ services:
       SVIX_REDIS_DSN: "redis://redis:6379"
       SVIX_DB_DSN: "postgresql://postgres:postgres@pgbouncer/postgres"
       SVIX_JWT_SECRET: "5f68322b819c2d5614a98a4631aa20829a6c8d6fb435ba116375ea7103c0c954"  # IMPORTANT: uncomment and set a real JWT secret here.
+      RUST_BACKTRACE: 1
     ports:
       - "8071:8071"
     depends_on:
